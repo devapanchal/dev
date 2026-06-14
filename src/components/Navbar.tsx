@@ -48,6 +48,7 @@ export function Navbar() {
   const navLinks = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
+    { href: '#experience', label: 'Experience' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#certifications', label: 'Certifications' },
@@ -56,7 +57,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 w-[50%] max-w-screen-lg px-4 rounded-2xl transition-all
+      className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 w-fit max-w-screen-lg px-6 rounded-2xl transition-all
         ${isScrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md outline outline-1 outline-blue-600' : 'bg-transparent'}
       `}
     >
