@@ -9,6 +9,30 @@ import "slick-carousel/slick/slick-theme.css";
 const certifications = [
   {
     id: 1,
+    title: "GenAI with Python",
+    issuer: "ChaiCode",
+    date: "June 2026",
+    link: "https://courses.chaicode.com/learn/certificate/11532824-227320",
+    image: "/assets/chaicode_genai.png",
+  },
+  {
+    id: 2,
+    title: "Introduction to LangChain - Python",
+    issuer: "LangChain Academy",
+    date: "March 2026",
+    link: "https://academy.langchain.com/",
+    image: "/assets/langchain_academy.png",
+  },
+  {
+    id: 3,
+    title: "GirlScript Summer of Code - Top Contributor",
+    issuer: "GirlScript Foundation",
+    date: "August 2025",
+    link: "https://gssoc.girlscript.tech/",
+    image: "/assets/gssoc_appreciation.png",
+  },
+  {
+    id: 4,
     title: "Python",
     issuer: "Hackerrank",
     date: "May 2025",
@@ -16,7 +40,7 @@ const certifications = [
     image: "./assets/python.png",
   },
   {
-    id: 2,
+    id: 5,
     title: "Frontend Learning",
     issuer: "Udemy",
     date: "May 2025",
@@ -24,7 +48,7 @@ const certifications = [
     image: "/assets/udemy.jpg",
   },
   {
-    id: 3,
+    id: 6,
     title: "SQL",
     issuer: "hackerank",
     date: "May 2025",
