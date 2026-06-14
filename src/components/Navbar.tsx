@@ -52,6 +52,7 @@ export function Navbar() {
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#certifications', label: 'Certifications' },
+    { href: '#achievements', label: 'Achievements' },
     { href: '#education', label: 'Education' },
   ];
 

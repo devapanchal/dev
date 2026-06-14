@@ -2,82 +2,64 @@ import React from 'react';
 import { SectionTitle } from './ui/SectionTitle';
 import { ProjectCard } from './ui/ProjectCard';
 import {
-  SiReact,
-  SiNodedotjs,
-  SiFirebase,
-  SiTailwindcss,
-  SiTypescript,
   SiNextdotjs,
-  SiMongodb,
-  SiPrisma,
-  SiShadcnui,
-  SiFramer,
-  SiSocketdotio,
-  SiStripe,
-  SiAppwrite,
+  SiTypescript,
+  SiExpress,
+  SiPostgresql,
+  SiRedis,
+  SiOpenai,
+  SiDocker,
+  SiDatabricks,
 } from 'react-icons/si';
+import { FaPython } from 'react-icons/fa';
+import { VscAzure } from 'react-icons/vsc';
+import { BarChart3 } from 'lucide-react';
 
 // Define reusable tech stack icons & colors
 const techStacks = {
-  react: { icon: SiReact, name: "React", color: '#00cfff' },
-  node: { icon: SiNodedotjs, name: "Node.js", color: '#228b22' },
-  firebase: { icon: SiFirebase, name: "Firebase", color: '#fbbf00' },
-  tailwind: { icon: SiTailwindcss, name: "Tailwind CSS", color: '#06b6d4' },
+  next: { icon: SiNextdotjs, name: "Next.js", color: '#000000' },
   typescript: { icon: SiTypescript, name: "TypeScript", color: '#1f6feb' },
-  next: { icon: SiNextdotjs, name: "Next.js", color: '#' },
-  mongodb: { icon: SiMongodb, name: "MongoDB", color: '#10b981' },
-  prisma: { icon: SiPrisma, name: "Prisma", color: '#186997' },
-  shadcn: { icon: SiShadcnui, name: "ShadCN", color: '#6366f1' },
-  framer: { icon: SiFramer, name: "Framer Motion", color: '#2563eb' },
-  socket: { icon: SiSocketdotio, name: "Socket.io", color: '#' },
-  stripe: { icon: SiStripe, name: "Stripe", color: '#5b4df1' },
-  appwrite: { icon: SiAppwrite, name: "Appwrite", color: '#ff3d00' },
+  express: { icon: SiExpress, name: "Express.js", color: '#000000' },
+  postgresql: { icon: SiPostgresql, name: "PostgreSQL", color: '#4169e1' },
+  redis: { icon: SiRedis, name: "Redis", color: '#d82c20' },
+  openai: { icon: SiOpenai, name: "OpenAI API", color: '#00a67e' },
+  docker: { icon: SiDocker, name: "Docker", color: '#2496ed' },
+  azure: { icon: VscAzure, name: "Azure Data Factory", color: '#0089d6' },
+  databricks: { icon: SiDatabricks, name: "Databricks", color: '#ff3621' },
+  pyspark: { icon: FaPython, name: "PySpark/Python", color: '#3776ab' },
+  powerbi: { icon: BarChart3, name: "Power BI", color: '#f2c811' },
 };
 
 // Define projects data
 const projects = [
   {
-    title: 'NotesNeolearn',
-    description: 'A notes sharing platform for university students with subject-wise notes, authentication, and personalised user dashboard to manage uploaded content.',
-    image: '/assets/notes.png',
-    link: 'https://noteslearning.netlify.app/',
-    github: 'https://github.com/devpanchal007/notes',
-    techStack: [
-      techStacks.react,
-      techStacks.tailwind,
-      techStacks.typescript,
-      techStacks.firebase,
-    ],
-  },
-  {
-    title: 'LearnDsa',
-    description: 'A coding platform with curated DSA sheets, roadmaps, CS articles, and an integrated compiler to help students practice and learn better.',
-    image: '/assets/learndsa.png',
-    link: 'https://learndsasde.netlify.app/',
-    github: 'https://github.com/devpanchal007/learningdsa',
-    techStack: [
-      techStacks.react,
-      techStacks.tailwind,
-      techStacks.typescript,
-      techStacks.mongodb,
-      techStacks.prisma,
-    ],
-  },
-  {
-    title: 'Portfolio',
-    description: 'A personal portfolio website showcasing projects, skills, blogs, and contact section with responsive design and modern UI/UX styling.',
-    image: '/assets/portfolio.png',
-    link: 'https://devpanchalportfolio.netlify.app/',
-    github: 'https://github.com/devpanchal007/portfolio',
+    title: 'LuminaPath AI',
+    description: 'An AI-powered learning platform featuring adaptive courses, AI career roadmaps, ATS resume analysis, and mock interviews. Built with Next.js, Express, PostgreSQL with normalized schema, Redis caching, JWT auth, and containerized with Docker.',
+    image: '/assets/luminapath.png',
+    github: 'https://github.com/devpanchal007/LuminaPath-AI',
     techStack: [
       techStacks.next,
-      techStacks.react,
       techStacks.typescript,
-      techStacks.tailwind,
-      techStacks.framer,
+      techStacks.express,
+      techStacks.postgresql,
+      techStacks.redis,
+      techStacks.openai,
+      techStacks.docker,
     ],
   },
-  
+  {
+    title: 'Azure Spotify ETL Pipeline',
+    description: 'An end-to-end cloud data pipeline ingesting Spotify datasets via REST APIs into ADLS Gen2, orchestrating PySpark transformations through Azure Data Factory and Databricks, and producing analytics-ready datasets for Power BI dashboards using Medallion Architecture.',
+    image: '/assets/spotify_etl.png',
+    github: 'https://github.com/devpanchal007/Spotify-ETL-Pipeline',
+    techStack: [
+      techStacks.azure,
+      techStacks.databricks,
+      techStacks.pyspark,
+      techStacks.postgresql, // generic database reference
+      techStacks.powerbi,
+    ],
+  },
 ];
 
 export function Projects() {
@@ -86,7 +68,7 @@ export function Projects() {
       <div className="container mx-auto px-8">
         <SectionTitle>Projects</SectionTitle>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mt-10">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}

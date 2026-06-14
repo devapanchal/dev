@@ -18,7 +18,7 @@ const aboutSections = [
     title: "What I Do",
     description: [
       "Develop high-performance web apps using modern JavaScript/TypeScript and React.",
-      "Build scalable data workflows using SQL, Azure Data Factory, and Databricks.",
+      "Build scalable data workflows using SQL, Azure Data Factory, Databricks, and PySpark.",
       "Design reliable microservices and design systems focused on clean, optimized code.",
     ],
     color: "bg-teal-600",
@@ -60,7 +60,7 @@ export function About() {
         <div className="max-w-5xl mx-auto mb-16 text-center">
           <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Hey there! 👋 I'm <span className="text-blue-600 font-semibold">Dev Panchal</span>,
-            a Software Engineer with expertise in full-stack development and experience building cloud data pipelines. Proficient in Python, JavaScript, Node.js, React.js, SQL, Azure Data Factory, and Databricks. Passionate about system design, scalable architecture, and shipping features end-to-end.
+            a Software Engineer with expertise in full-stack development and experience building cloud data pipelines and BI reporting systems. Proficient in Python, JavaScript, Node.js, React.js, SQL, Azure Data Factory, Databricks, and PySpark. Passionate about system design, scalable architecture, and shipping features end-to-end.
           </p>
 
           <div className="mt-6 flex justify-center">

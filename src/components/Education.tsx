@@ -4,8 +4,8 @@ import { TypeWriter } from './ui/TypeWriter';
 
 const education = [
   {
-    degree: 'B.Tech in Computer Science Engineering',
-    institution: 'Central University of Haryana, Mahendergarh',
+    degree: 'B.Tech in Computer Science & Engineering',
+    institution: 'Central University of Haryana, Mahendergarh, HR',
     period: '2022 - 2026',
     score: 'present',
   },
