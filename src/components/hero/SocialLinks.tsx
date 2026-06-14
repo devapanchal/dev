@@ -14,12 +14,12 @@ const links = [
     label: 'LinkedIn',
   },
   {
-    href: 'https://www.instagram.com/dev.panchal_/',
+    href: 'https://www.instagram.com/deva.panchal_?igsh=bGQ1ajR0MXRsbm84',
     icon: <Instagram className="w-6 h-6 text-[#E1306C]" />,
     label: 'Instagram',
   },
   {
-    href: '',
+    href: 'https://wa.me/919306600235',
     icon: <FaWhatsapp className="w-6 h-6 text-[#25D366]" />,
     label: 'WhatsApp',
   },
