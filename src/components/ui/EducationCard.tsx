@@ -20,7 +20,7 @@ export function EducationCard({
     <div className="relative group bg-gray-200 dark:bg-gray-800 p-4 sm:p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400">
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-teal-500/5 to-emerald-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       <div className="relative z-10 flex items-start gap-6">
         {/* Cap Icon */}

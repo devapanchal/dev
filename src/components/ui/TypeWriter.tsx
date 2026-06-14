@@ -49,7 +49,7 @@ export function TypeWriter({
     <span
       className={`relative font-semibold ${
         gradient
-          ? "bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+          ? "bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-500 bg-clip-text text-transparent"
           : "text-blue-600 dark:text-blue-400"
       }`}
     >

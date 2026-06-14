@@ -7,9 +7,9 @@ const aboutSections = [
     icon: User2,
     title: "Who I Am",
     description: [
-      "A full-stack developer having interest in software engineering.",
-      "Enjoy solving problems and building scalable applications.",
-      "Always learning new technologies to improve my skills.",
+      "A full-stack software engineer passionate about backend architecture and data systems.",
+      "Experienced in designing scalable web apps and orchestrating cloud data pipelines.",
+      "A lifelong seeker of clarity, resilience, and growth in both code and life.",
     ],
     color: "bg-blue-600",
   },
@@ -17,19 +17,19 @@ const aboutSections = [
     icon: Code2,
     title: "What I Do",
     description: [
-      "Develop high-performance web apps using modern tech stacks.",
-      "Solve algorithmic problems and optimize code efficiency.",
-      "Contribute to open-source and follow industry trends.",
+      "Develop high-performance web apps using modern JavaScript/TypeScript and React.",
+      "Build scalable data workflows using SQL, Azure Data Factory, and Databricks.",
+      "Design reliable microservices and design systems focused on clean, optimized code.",
     ],
-    color: "bg-purple-600",
+    color: "bg-teal-600",
   },
   {
     icon: GoGoal,
     title: "My Goals",
     description: [
-      "Build tech products that solve real-world challenges at scale.",
-      "Advance as a full-stack developer with modern frameworks.",
-      "Grow the dev community through open-source contributions.",
+      "Live with a full heart, dedicating my full energy to my craft, relationships, and self-mastery.",
+      "Approach every challenge with courage, gratitude, and purpose.",
+      "Build products that leave a lasting positive impact, so I can depart with a smile and no regrets.",
     ],
     color: "bg-green-600",
   },
@@ -37,9 +37,9 @@ const aboutSections = [
     icon: Lightbulb,
     title: "My Philosophy",
     description: [
-      "Technology should simplify lives, not complicate them.",
-      "Great software solves problems, not just writes code.",
-      "Continuous learning keeps you ahead in tech.",
+      "Amor Fati: Embrace whatever comes with grace, turning obstacles into stepping stones.",
+      "Control what is within; accept and let go of what is outside your control.",
+      "Inner peace is the source of outer excellence. Code with clarity, live with presence.",
     ],
     color: "bg-orange-600",
   },
@@ -49,7 +49,7 @@ export function About() {
   return (
     <section id="about" className="py-20 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-teal-50 dark:from-gray-900 dark:to-gray-800">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.06]" />
       </div>
 
@@ -60,14 +60,12 @@ export function About() {
         <div className="max-w-5xl mx-auto mb-16 text-center">
           <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Hey there! 👋 I'm <span className="text-blue-600 font-semibold">Dev Panchal</span>,
-            a Frontend Developer prefinal-year Computer Science Engineering student.
-            I love transforming ideas into scalable web applications and solving complex coding challenges. 
-            My journey in tech revolves around continuous learning, experimenting with new technologies, and building solutions that make an impact.
+            a Software Engineer with expertise in full-stack development and experience building cloud data pipelines. Proficient in Python, JavaScript, Node.js, React.js, SQL, Azure Data Factory, and Databricks. Passionate about system design, scalable architecture, and shipping features end-to-end.
           </p>
 
           <div className="mt-6 flex justify-center">
             <span className="text-sm sm:text-base inline-block bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 px-4 py-2 rounded-lg shadow">
-              🚀 I like to build products and solve problems
+              🚀 I design scalable systems and build end-to-end solutions
             </span>
           </div>
         </div>

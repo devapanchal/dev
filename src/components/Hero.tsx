@@ -22,11 +22,11 @@ export function Hero() {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* Animated background with particles */}
-      <div className="absolute  bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800">
+      <div className="absolute  bg-gradient-to-br from-blue-50 to-teal-50 dark:from-gray-900 dark:to-gray-800">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.08]" />
         {/* Animated gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-400/30 dark:bg-blue-600/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-400/30 dark:bg-purple-600/30 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-teal-400/20 dark:bg-teal-600/20 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
 
       <div className="container mx-auto px-10 py-16 relative z-10">
@@ -37,7 +37,7 @@ export function Hero() {
               <div className="inline-block bg-blue-100 dark:bg-blue-900/50 backdrop-blur-sm text-blue-600 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full">
               Hey! <span className="inline-block origin-[70%_70%] animate-wave">👋</span> I'm
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent animate-gradient">
+              <h1 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-teal-500 to-blue-600 bg-clip-text text-transparent animate-gradient">
                 Dev Panchal
               </h1>
               <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
@@ -54,11 +54,11 @@ export function Hero() {
           <div className="relative order-1 md:order-2">
             {/* Floating solid circular elements */}
             {/* <div className="absolute w-24 h-24 bg-blue-600 top-0 left-0 rounded-full animate-floating" /> */}
-            <div className="absolute w-24 h-24 bg-purple-600 bottom-0 right-0 rounded-full animate-floating delay-150" />
+            <div className="absolute w-24 h-24 bg-teal-600 bottom-0 right-0 rounded-full animate-floating delay-150" />
             <div className="absolute w-20 h-20 bg-green-500 top-4 right-4 rounded-full animate-floating delay-300" />
             <div className="absolute w-20 h-20 bg-yellow-500 bottom-4 left-4 rounded-full animate-floating delay-450" />
 
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-teal-500/20 rounded-full blur-3xl animate-pulse" />
             <div className="">
               <img
                 src="./assets/dev.jpg"

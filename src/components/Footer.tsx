@@ -26,6 +26,7 @@ export function Footer() {
   const links = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
+    { href: '#experience', label: 'Experience' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#certifications', label: 'Certifications' },
@@ -36,7 +37,7 @@ export function Footer() {
   return (
     <footer className="relative bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-teal-500/5" />
 
       <div className="container mx-auto px-6 py-8 relative">
         <div className="flex flex-col items-center gap-6">
