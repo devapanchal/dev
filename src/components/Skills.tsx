@@ -4,7 +4,6 @@ import { SkillCard } from "./ui/SkillCard";
 import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiTailwindcss, SiCplusplus, SiGit, SiGithub, SiPostman, } from "react-icons/si";
 import { FaPython} from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
-import { IoLogoFirebase } from "react-icons/io5";
 
 const skills = [
   { name: "HTML", icon: SiHtml5, color: "#e34f26", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },

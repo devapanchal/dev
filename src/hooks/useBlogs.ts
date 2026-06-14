@@ -10,6 +10,17 @@ interface Blog {
   slug: string;
 }
 
+interface HashnodePostEdge {
+  node: {
+    title: string;
+    brief: string;
+    coverImage: {
+      url: string;
+    } | null;
+    slug: string;
+  };
+}
+
 export function useBlogs() {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
@@ -53,9 +64,9 @@ export function useBlogs() {
 
         if (data?.data?.user?.publications?.edges?.length > 0) {
           // Extract posts from the first publication
-          const posts = data.data.user.publications.edges[0].node.posts.edges;
+          const posts = data.data.user.publications.edges[0].node.posts.edges as HashnodePostEdge[];
 
-          const formattedBlogs = posts.map((post: any) => ({
+          const formattedBlogs = posts.map((post: HashnodePostEdge) => ({
             title: post.node.title,
             brief: post.node.brief,
             coverImage: post.node.coverImage ? post.node.coverImage.url : null, // Use cover image URL

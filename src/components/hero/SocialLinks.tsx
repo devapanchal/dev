@@ -35,7 +35,7 @@ export function SocialLinks() {
     <div className="flex flex-wrap gap-2 justify-center md:justify-start">
       {links.map(({ href, icon, label }) => (
         <a
-          key={href}
+          key={label}
           href={href}
           target="_blank"
           rel="noopener noreferrer"

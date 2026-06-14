@@ -40,7 +40,7 @@ export function ContactForm() {
         setErrorMessage(errorData.error || 'Something went wrong. Please try again.');
         setStatus('error');
       }
-    } catch (error) {
+    } catch {
       setErrorMessage('An unexpected error occurred. Please try again.');
       setStatus('error');
     }
